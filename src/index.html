@@ -4,9 +4,157 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./input.css" rel="stylesheet" />
-    <title>Tailwind Starter Jessica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chat App Illustration - FeMentor</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-lightGrayishVioletBg h-screen font-rubik">
+    <div
+      class="gradient-wrapper w-64 h-96 bg-gradient-to-t from-[hsl(264_100%_61%)] to-[hsl(293_100%_63%)] rounded-br-full"
+    ></div>
+
+    <div
+      class="main-phone-wrapper flex justify-center items-center -mt-80 h-full"
+    >
+      <div class="phone-wrapper w-80 p-3 max-h-max bg-white flex rounded-3xl">
+        <div class="inside-phone-wrapper w-80 relative">
+          <div
+            class="w-40 h-6 rounded-br-2xl rounded-bl-2xl bg-white absolute inset-y-0 inset-x-16"
+          ></div>
+          <div
+            class="title-section-flex flex justify-start p-4 items-center bg-gradient-to-r from-[hsl(264_100%_61%)] to-[hsl(293_100%_63%)] rounded-tr-3xl rounded-tl-3xl rounded-bl-md rounded-br-md h-20"
+          >
+            <i class="left-arrow"></i>
+            <img
+              class="samuels-ugly-face w-7 h-7 rounded-full border-white mr-3 mt-6"
+              src="./images/avatar.jpg"
+              alt="samuels-uglyface"
+            />
+            <div class="flex-col">
+              <p class="text-white text-sm tracking-wide mt-6">Samuel Green</p>
+              <p class="text-white opacity-40 text-xs">Available to Walk</p>
+            </div>
+            <i class="three-dots"></i>
+          </div>
+
+          <div class="chat-section bg-lightGrayishVioletBg">
+            <div class="chat1 flex-col pt-4 pl-4">
+              <div>
+                <p
+                  class="text-xs w-44 pr-3 pl-3 pt-3 pb-2 rounded-xl text-moderateVioletChatLeft bg-violet-100"
+                >
+                  That sounds great. I’d be happy with that.
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-xs w-44 pr-3 pl-3 pt-2 pb-2 mt-4 rounded-xl text-moderateVioletChatLeft bg-violet-100"
+                >
+                  Could you send over some pictures of your dog, please?
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="reply1 flex flex-col mt-6 justify-end items-end mb-4 pr-3"
+            >
+              <div id="dogimages " class="flex gap-3 mb-4">
+                <img
+                  class="w-16 rounded-xl"
+                  src="./images/dog-image-1.jpg"
+                  alt="dog-image-1"
+                />
+                <img
+                  class="w-16 rounded-xl"
+                  src="./images/dog-image-2.jpg"
+                  alt="dog-image-2"
+                />
+                <img
+                  class="w-16 rounded-xl"
+                  src="./images/dog-image-3.jpg"
+                  alt="dog-image-3"
+                />
+              </div>
+              <div>
+                <p
+                  class="text-xs w-48 pr-3 pl-3 pt-3 pb-2 rounded-xl text-black bg-white mb-3"
+                >
+                  Here are a few pictures. She’s a happy girl!
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-xs w-32 pr-3 pl-3 pt-3 pb-2 rounded-2xl text-black bg-white"
+                >
+                  Can you make it?
+                </p>
+              </div>
+            </div>
+
+            <div class="chat2flexcol">
+              <p
+                class="text-xs w-48 pr-3 pl-3 pt-2 pb-2 ml-4 mt-4 rounded-xl text-moderateVioletChatLeft bg-violet-100"
+              >
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+              <div
+                class="flex bg-gradient-to-l from-[hsl(264_100%_61%)] to-[hsl(293_100%_63%)] p-3 w-56 h-12 ml-5 mt-3 rounded-xl justify-between"
+                id="inputfield-flex-one"
+              >
+                <div class="option1 flex justify-between items-center">
+                  <input class="bg-transparent mr-3" type="radio" />
+                  <p class="text-white text-xs opacity-60">30 minute walk</p>
+                </div>
+                <p class="text-white font-bold mr-4">$29</p>
+              </div>
+              <div
+                class="flex bg-gradient-to-l from-[hsl(264_100%_61%)] to-[hsl(293_100%_63%)] p-3 w-56 h-12 mb-6 ml-5 mt-3 rounded-xl justify-between"
+                id="inputfield-flex-two "
+              >
+                <div class="option2 flex justify-between items-center">
+                  <input class="bg-transparent mr-3" type="radio" />
+                  <p class="text-white text-xs opacity-60">1 hour walk</p>
+                </div>
+                <p class="text-white font-bold mr-4">$49</p>
+              </div>
+            </div>
+
+            <form class="relative mx-5" action="#">
+              <input
+                class="rounded-full w-full mb-5 pt-3 pb-3 pl-8 placeholder:text-xs placeholder:text-grayishBluePlaceholderText"
+                type="text"
+                placeholder="Type a message..."
+              />
+              <button
+                class="bg-veryDarkDesaturatedVioletSubmit outline-veryLightMagentaButtonOutline w-9 h-9 rounded-full absolute right-2 top-1"
+              >
+                <i class="right-arrow"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="booking-wrapper w-full flex flex-col h-full justify-end text-center items-center p-24"
+    >
+      <h1
+        class="text-veryDarkDesaturatedVioletHeading text-4xl tracking-wide font-medium mb-8"
+      >
+        Simple booking
+      </h1>
+
+      <p class="text-darkGrayishVioletParagraph leading-7">
+        Stay in touch with our dog walkers through the chat interface. This
+        makes it easy to discuss arrangements and make bookings. Once the walk
+        has been completed you can rate your walker and book again all through
+        the chat.
+      </p>
+    </div>
   </body>
 </html>
